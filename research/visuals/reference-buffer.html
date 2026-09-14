@@ -1,0 +1,74 @@
+<div id="mie366-reference-buffer">
+  <style>
+    #mie366-reference-buffer { color: var(--foreground); }
+    #mie366-reference-buffer svg { display: block; width: 100%; height: 360px; overflow: visible; }
+    #mie366-reference-buffer .wire { fill: none; stroke: currentColor; stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+    #mie366-reference-buffer .feedback { stroke: var(--viz-series-1, var(--blue)); }
+    #mie366-reference-buffer .junction { fill: var(--viz-series-1, var(--blue)); }
+    #mie366-reference-buffer text { fill: currentColor; font: inherit; }
+  </style>
+  <svg role="img" aria-labelledby="mie366-buffer-title mie366-buffer-desc">
+    <title id="mie366-buffer-title">Reference voltage buffer: a voltage follower</title>
+    <desc id="mie366-buffer-desc">The divider midpoint connects to the non-inverting plus input of one LM324N amplifier. The output is wired directly back to the inverting minus input and also connects to the next stage. The amplifier power connections are plus 19 volts and ground. This is a teaching schematic; no reference voltage or component values have been selected.</desc>
+    <path id="mie366-buffer-symbol" class="wire"></path>
+    <path id="mie366-buffer-input" class="wire"></path>
+    <path id="mie366-buffer-output" class="wire"></path>
+    <path id="mie366-buffer-feedback" class="wire feedback"></path>
+    <path id="mie366-buffer-supplies" class="wire"></path>
+    <circle id="mie366-buffer-junction" class="junction" r="4"></circle>
+    <text id="mie366-buffer-plus">+</text>
+    <text id="mie366-buffer-minus">−</text>
+    <text id="mie366-buffer-device" text-anchor="middle">LM324N</text>
+    <text id="mie366-buffer-in-label">Divider midpoint</text>
+    <text id="mie366-buffer-out-label" text-anchor="end">V_REF</text>
+    <text id="mie366-buffer-out-target" text-anchor="end">To next stage</text>
+    <text id="mie366-buffer-supply-label" text-anchor="middle">+19 V supply</text>
+    <text id="mie366-buffer-ground-label">0 V</text>
+    <text id="mie366-buffer-feedback-label" text-anchor="middle">Direct feedback wire</text>
+  </svg>
+  <script>
+    (() => {
+      const root = document.getElementById('mie366-reference-buffer');
+      const svg = root.querySelector('svg');
+      const node = name => root.querySelector('#mie366-buffer-' + name);
+      const setPath = (name, d) => node(name).setAttribute('d', d);
+      const position = (name, x, y) => {
+        node(name).setAttribute('x', x);
+        node(name).setAttribute('y', y);
+      };
+      const draw = () => {
+        const width = root.getBoundingClientRect().width;
+        if (width <= 0) return;
+        const compact = width < 500;
+        const left = width * (compact ? 0.36 : 0.40);
+        const triangleWidth = compact ? 100 : 150;
+        const top = 85, bottom = 265, mid = 175;
+        const tip = left + triangleWidth;
+        const right = width - 18;
+        const junction = tip + (right - tip) * 0.45;
+        const supplyX = left + triangleWidth * 0.4;
+        const feedbackX = left - 22;
+        svg.setAttribute('viewBox', `0 0 ${width} 360`);
+        setPath('symbol', `M ${left} ${top} L ${tip} ${mid} L ${left} ${bottom} Z`);
+        setPath('input', `M 18 140 H ${left}`);
+        setPath('output', `M ${tip} ${mid} H ${right}`);
+        setPath('feedback', `M ${junction} ${mid} V 320 H ${feedbackX} V 220 H ${left}`);
+        setPath('supplies', `M ${supplyX} 121 V 52 M ${supplyX} 229 V 282 M ${supplyX - 13} 282 H ${supplyX + 13} M ${supplyX - 9} 289 H ${supplyX + 9} M ${supplyX - 5} 296 H ${supplyX + 5}`);
+        node('junction').setAttribute('cx', junction);
+        node('junction').setAttribute('cy', mid);
+        position('plus', left + 10, 145);
+        position('minus', left + 10, 225);
+        position('device', left + triangleWidth * 0.43, 182);
+        position('in-label', 18, compact ? 112 : 116);
+        node('in-label').textContent = compact ? 'Divider' : 'Divider midpoint';
+        position('out-label', right, 153);
+        position('out-target', right, compact ? 123 : 203);
+        position('supply-label', supplyX, 33);
+        position('ground-label', supplyX + 20, 286);
+        position('feedback-label', (feedbackX + junction) / 2, 346);
+      };
+      new ResizeObserver(draw).observe(root);
+      draw();
+    })();
+  </script>
+</div>

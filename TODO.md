@@ -23,6 +23,9 @@ research/DA1_SOURCE_REVIEW.md. No engineering decisions are accepted yet.
   Phase: Research; real-device loading remains unassessed.
 - [ ] Relate the weighted reference term b V_REF to the required output
   offset in a weighted sum (R006, R014; DA1B pp. 3, 8). Phase: Research.
+- [ ] Derive the non-inverting summing input-node voltage, starting with
+  equal input resistors and ideal sources, then connect it to feedback
+  gain (R006, R014; DA1B p. 8). Phase: Research. Student response pending.
 - [x] Check the low-current limitation of a hypothetical unity-gain
   buffer directly on V_SENSE using the handout's approximation (DA1B
   p. 6; Q03/Q05). Student correctly recognized that a buffer with an

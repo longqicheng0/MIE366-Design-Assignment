@@ -17,9 +17,14 @@ Build the student's understanding of DA1 through small, source-backed
 steps, then resolve the highest-impact evidence gaps before planning
 candidate circuits.
 
-Current learning checkpoint: match the reference contribution b V_REF
-in V_OUT = a V_SENSE + b V_REF to the required output offset (R006;
-DA1B pp. 3, 8). The building-block discussion now
+Current learning checkpoint: find the non-inverting input-node voltage
+when V_SENSE and V_REF connect through equal resistors, assuming ideal
+voltage sources and zero op-amp input current. Then derive the general
+weighted-node and feedback-gain relationships (R006, R014; DA1B p. 8).
+The voltage-follower teaching schematic is in
+research/visuals/reference-buffer.html. The weighted-sum condition
+b V_REF = 0.25 V was explained on request; student application remains
+unassessed. The building-block discussion now
 considers using one op-amp to buffer that reference and another to combine
 gain and offset. This is a possibility to investigate, not an accepted or
 verified topology; component values, loading, and device limits remain
@@ -106,4 +111,4 @@ No simulation or physical test evidence is recorded.
 
 ## Last Updated
 
-2026-09-14 — ideal buffer input checkpoint checked; summing-weight checkpoint pending.
+2026-09-14 — summing-stage input-node learning checkpoint started.
