@@ -17,9 +17,15 @@ Build the student's understanding of DA1 through small, source-backed
 steps, then resolve the highest-impact evidence gaps before planning
 candidate circuits.
 
-Current learning checkpoint: find the non-inverting input-node voltage
-when V_SENSE and V_REF connect through equal resistors, assuming ideal
-voltage sources and zero op-amp input current. Then derive the general
+Current learning checkpoint: organize the Engineering Specification and
+Background Research section around relevant building blocks, their
+functions, limitations, and integration, with numbered source citations
+(R014, R015, R032; DA1B p. 4). The source labels the section <1 page.
+The outline is guidance; no report draft or completed primary-source
+building-block research is implied.
+
+Pending circuit checkpoint: find the non-inverting input-node voltage
+for equal input resistors and ideal sources, then derive the general
 weighted-node and feedback-gain relationships (R006, R014; DA1B p. 8).
 The feedback relationship G = 1 + R_f/R_g was explained using the
 output-to-inverting-input divider under ideal linear negative feedback.
@@ -115,4 +121,4 @@ No simulation or physical test evidence is recorded.
 
 ## Last Updated
 
-2026-09-14 — summing-stage input-node learning checkpoint started.
+2026-09-14 — first-section content guidance checked against DA1B p. 4.

@@ -6,6 +6,11 @@ research/DA1_SOURCE_REVIEW.md. No engineering decisions are accepted yet.
 
 ## Now
 
+- [ ] Gather cited building-block evidence and prepare a concise first
+  section covering functionality, limitations, and a plan for integration
+  (R014, R015, R032; DA1B p. 4). Content guidance clarified; drafting and
+  source collection remain pending. Preserve the <1-page source label
+  and unresolved page-count questions in Q02. Phase: Research.
 - [x] Learning checkpoint: identify R_SENSE as the measurement source
   and calculate its voltage at 3.5 A (R002, R004). Student's 0.35 V result
   checked using V = IR. Phase: Research; no design verification implied.
