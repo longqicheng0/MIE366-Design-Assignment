@@ -6,9 +6,11 @@ research/DA1_SOURCE_REVIEW.md. No engineering decisions are accepted yet.
 
 ## Now
 
-- [ ] Explain the CURRENT SENSE block's purpose in the larger power
-  supply, then check understanding against the handouts (R001, R002,
-  R005). Phase: Research. First student response pending.
+- [x] Learning checkpoint: identify R_SENSE as the measurement source
+  and calculate its voltage at 3.5 A (R002, R004). Student's 0.35 V result
+  checked using V = IR. Phase: Research; no design verification implied.
+- [ ] Derive the gain from the sense-voltage and nominal output ranges
+  (R006; DA1B pp. 3, 7). Phase: Research. Student response pending.
 - [ ] Review the initial requirement extraction R001–R035 and resolve
   consequential interpretations through the required challenge gate.
   Phase: Research.
@@ -37,6 +39,9 @@ research/DA1_SOURCE_REVIEW.md. No engineering decisions are accepted yet.
 
 ## Later
 
+- [ ] Revisit the zero-input algebra and zero-voltage/open-circuit
+  distinction when useful; deferred at the student's request and not
+  yet confirmed understood. Phase: Research.
 - [ ] Implement the student-accepted final design and collect simulation
   evidence for the stated conditions (R020–R024).
   Phase: Implement.

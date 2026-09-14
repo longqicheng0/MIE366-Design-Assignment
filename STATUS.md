@@ -17,10 +17,18 @@ Build the student's understanding of DA1 through small, source-backed
 steps, then resolve the highest-impact evidence gaps before planning
 candidate circuits.
 
-Current learning checkpoint: explain the CURRENT SENSE block's purpose
-in the larger power supply (R001, R002, R005). Awaiting the student's
-first explanation; understanding has not yet been assessed. Use one
+Current learning checkpoint: derive the gain relating V_SENSE = 0–0.35 V
+to the nominal V_OUT = 0.25–3.3 V target (R006; DA1B pp. 3, 7). Use one
 question at a time, with hints before answers.
+
+Learning progress: the student identified R_SENSE as the measurement
+source and correctly calculated (3.5 A)(0.1 Ω) = 0.35 V [DERIVED]. The
+student identified the hardware motivation for the nonzero output target
+in DA1B p. 5. Its approximately 0.1 V output floor remains a teaching
+approximation pending Q03/Q05, not an accepted universal device limit.
+The zero-input algebra and zero-voltage/open-circuit distinction were
+deferred at the student's request; understanding is not yet confirmed.
+The grill-me exchange ended without a design-acceptance gate outcome.
 
 ## Current Assignment Stage
 
@@ -79,4 +87,4 @@ No simulation or physical test evidence is recorded.
 
 ## Last Updated
 
-2026-09-14 — guided DA1 learning started; first checkpoint pending.
+2026-09-14 — sense-voltage calculation checked; gain checkpoint pending.
