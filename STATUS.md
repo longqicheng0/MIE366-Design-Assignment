@@ -17,12 +17,18 @@ Build the student's understanding of DA1 through small, source-backed
 steps, then resolve the highest-impact evidence gaps before planning
 candidate circuits.
 
-Current learning checkpoint: derive the gain relating V_SENSE = 0–0.35 V
-to the nominal V_OUT = 0.25–3.3 V target (R006; DA1B pp. 3, 7). Use one
-question at a time, with hints before answers.
+Current learning checkpoint: explain the potential low-current error of
+a unity-gain buffer connected directly to V_SENSE, using the handout's
+output-floor approximation (DA1B p. 6; Q03/Q05). This is a building-block
+exercise, not an accepted buffer placement. Use one question at a time,
+with hints before answers.
 
 Learning progress: the student identified R_SENSE as the measurement
 source and correctly calculated (3.5 A)(0.1 Ω) = 0.35 V [DERIVED]. The
+student's gain of 8.714 is correct to three decimal places:
+A = (3.3 V - 0.25 V)/(0.35 V - 0 V) = 8.714285... V/V [DERIVED]. The
+nominal target is V_OUT = A V_SENSE + 0.25 V (R006; DA1B pp. 3, 7), with
+no resistor network or circuit topology selected. The
 student identified the hardware motivation for the nonzero output target
 in DA1B p. 5. Its approximately 0.1 V output floor remains a teaching
 approximation pending Q03/Q05, not an accepted universal device limit.
@@ -87,4 +93,4 @@ No simulation or physical test evidence is recorded.
 
 ## Last Updated
 
-2026-09-14 — sense-voltage calculation checked; gain checkpoint pending.
+2026-09-14 — gain calculation checked; buffer-limit checkpoint pending.

@@ -9,8 +9,12 @@ research/DA1_SOURCE_REVIEW.md. No engineering decisions are accepted yet.
 - [x] Learning checkpoint: identify R_SENSE as the measurement source
   and calculate its voltage at 3.5 A (R002, R004). Student's 0.35 V result
   checked using V = IR. Phase: Research; no design verification implied.
-- [ ] Derive the gain from the sense-voltage and nominal output ranges
-  (R006; DA1B pp. 3, 7). Phase: Research. Student response pending.
+- [x] Derive the gain from the sense-voltage and nominal output ranges
+  (R006; DA1B pp. 3, 7). Student's 8.714 V/V is correct when rounded to
+  three decimal places. Phase: Research; no circuit design selected.
+- [ ] Explain the low-current limitation of a hypothetical unity-gain
+  buffer directly on V_SENSE using the handout's approximation (DA1B
+  p. 6; Q03/Q05). Phase: Research. Student response pending.
 - [ ] Review the initial requirement extraction R001–R035 and resolve
   consequential interpretations through the required challenge gate.
   Phase: Research.
