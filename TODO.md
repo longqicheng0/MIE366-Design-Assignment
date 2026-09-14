@@ -12,9 +12,13 @@ research/DA1_SOURCE_REVIEW.md. No engineering decisions are accepted yet.
 - [x] Derive the gain from the sense-voltage and nominal output ranges
   (R006; DA1B pp. 3, 7). Student's 8.714 V/V is correct when rounded to
   three decimal places. Phase: Research; no circuit design selected.
-- [ ] Identify a resistor circuit that produces a fixed reference from
+- [x] Identify a resistor circuit that produces a fixed reference from
   +19 V, as background for buffered-reference and combined gain/offset
-  building blocks (DA1B p. 8; R014). Phase: Research.
+  building blocks (DA1B p. 8; R014). Student identified the divider and
+  correctly checked its equal-resistor fraction after the unloaded
+  formula was demonstrated. Phase: Research.
+- [ ] Explain midpoint current splitting and divider loading, then
+  connect this to the buffer's role (DA1B p. 8; R014). Phase: Research.
 - [x] Check the low-current limitation of a hypothetical unity-gain
   buffer directly on V_SENSE using the handout's approximation (DA1B
   p. 6; Q03/Q05). Student correctly recognized that a buffer with an

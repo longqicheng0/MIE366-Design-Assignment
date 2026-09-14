@@ -17,8 +17,9 @@ Build the student's understanding of DA1 through small, source-backed
 steps, then resolve the highest-impact evidence gaps before planning
 candidate circuits.
 
-Current learning checkpoint: identify how resistors could produce a
-fixed reference from +19 V (DA1B p. 8). The building-block discussion now
+Current learning checkpoint: explain how current drawn from a divider's
+midpoint changes its unloaded behavior, then relate this to buffering
+(DA1B p. 8). The building-block discussion now
 considers using one op-amp to buffer that reference and another to combine
 gain and offset. This is a possibility to investigate, not an accepted or
 verified topology; component values, loading, and device limits remain
@@ -35,6 +36,11 @@ in DA1B p. 5. Its approximately 0.1 V output floor remains a teaching
 approximation pending Q03/Q05, not an accepted universal device limit.
 The student correctly recognized that a buffer with this assumed floor
 cannot accurately reproduce a 0.05 V input (DA1B p. 6 teaching example).
+The student identified the two-resistor divider; its unloaded formula
+was demonstrated: V_REF = (19 V) R_bottom/(R_top + R_bottom) [DERIVED,
+assuming no midpoint load]. The student correctly identified the fraction
+as 1/2 for equal resistors, giving 9.5 V in this illustrative case. No
+reference voltage or divider values have been selected for the design.
 The zero-input algebra and zero-voltage/open-circuit distinction were
 deferred at the student's request; understanding is not yet confirmed.
 The grill-me exchange ended without a design-acceptance gate outcome.
@@ -96,4 +102,4 @@ No simulation or physical test evidence is recorded.
 
 ## Last Updated
 
-2026-09-14 — two-op-amp function sharing discussed; reference checkpoint pending.
+2026-09-14 — divider example checked; loading checkpoint pending.
