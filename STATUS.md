@@ -2,61 +2,73 @@
 
 ## Current HVE Phase
 
-Not yet assessed.
+Research.
 
-Workspace configuration and repository validation are complete. The
-engineering phase will be determined from assignment sources and
-project evidence.
+Reason: the four supplied sources establish DA1 scope, but candidate
+research and several acceptance/model details remain unresolved.
+
+Exit condition: source-backed requirements, applicable component/model
+evidence, and explicit acceptance criteria sufficient for a defensible
+candidate plan; significant interpretations require student acceptance.
 
 ## Current Objective
 
-Establish the assignment stage and source-backed requirements before
-planning the engineering design.
+Review the draft DA1 requirements and resolve the highest-impact evidence
+gaps before planning candidate circuits.
 
 ## Current Assignment Stage
 
-Not yet assessed — DA1 / DA2 / DA3 / DA4 requires confirmation.
+DA1 — Design Proposal, based on the supplied detailed handouts.
+Current course-year scheduling and any work outside this repository
+have not been confirmed.
 
 ## Completed
 
-- Section 2: AGENTS.md approved, implemented, and checked.
-- Section 3: project-tracking documents initialized.
-- Sections 4–6: all three repo-local skills created and validated.
-- Section 7: docs/AI_WORKFLOW.md created and its local links checked.
-- Section 8: repository structure, skill metadata, instruction consistency,
-  preservation of existing work, and Git checks completed.
-- Engineering completion: Not yet assessed.
+- Workspace setup and final repository validation (Sections 2–8).
+- Four source PDFs added by the student and inspected.
+- Initial DA1 requirement extraction: R001–R035.
+- Source review recorded in research/DA1_SOURCE_REVIEW.md, including
+  assignment constraints, separate design hints, and datasheet cautions.
 
 ## In Progress
 
-No engineering task is recorded as in progress.
+- Requirement interpretation and acceptance-criteria review.
+- Research preparation for the two candidate designs.
 
 ## Blocked / Unknown
 
-- source-docs/ contains no assignment documents.
-- Assignment stage, technical requirements, and engineering progress
-  are not yet assessed.
+- Q01: exact output-error and tolerance acceptance criteria.
+- Q02: section-page allocations and reference-section counting.
+- Q03/Q05: lab LM324N model, applicable device/loading conditions, and
+  the handout/datasheet output-swing discrepancy.
+- Q04: the handouts say September 21, end-of-day, Toronto time, but
+  omit year and precise cutoff; current course posting needs confirmation.
+- Building-block research is not yet completed (Q06).
 
 ## Next Actions
 
-- Obtain official assignment sources.
-- Use mie366-hve-design to establish the engineering context and propose
-  source-backed requirements; see TODO.md.
+- Review REQUIREMENTS.md and the open questions in the source review.
+- Resolve acceptance/model evidence and gather primary building-block
+  research; see TODO.md.
+- Use mie366-grill-me before accepting consequential interpretations
+  or a major candidate/design choice.
 
 ## Open Decisions
 
-No engineering decisions recorded. Outstanding design questions have
-not yet been assessed.
+No engineering decisions accepted. Open interpretations are recorded
+as Q01–Q06 in research/DA1_SOURCE_REVIEW.md.
 
 ## Latest Major Decision
 
-No engineering decision recorded.
+None recorded.
 
 ## Latest Evidence Added
 
-No engineering evidence recorded. Workspace validation does not verify
-engineering requirements.
+[REQ] DA1A/DA1B v1.1 and roadmap v1.2.
+[DATASHEET] Supplied TI LM324-N-family datasheet, SNOSC16D.
+Source filenames and page references are in research/DA1_SOURCE_REVIEW.md.
+No simulation or physical test evidence is recorded.
 
 ## Last Updated
 
-2026-09-14 — workspace setup and repository validation completed.
+2026-09-14 — initial source intake and draft DA1 requirement baseline.

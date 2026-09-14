@@ -1,31 +1,53 @@
 # MIE366 Action List
 
-Setup completion is recorded in STATUS.md.
-Engineering tasks use Research / Plan / Implement / Review / Follow-up.
-
-Add requirement and decision IDs when they exist. No engineering IDs
-have been assigned yet.
+Engineering phase: Research. Source intake is recorded in STATUS.md.
+Requirement IDs refer to REQUIREMENTS.md; Q01–Q06 refer to
+research/DA1_SOURCE_REVIEW.md. No engineering decisions are accepted yet.
 
 ## Now
 
-- [ ] Obtain the official assignment documents for source review.
+- [ ] Review the initial requirement extraction R001–R035 and resolve
+  consequential interpretations through the required challenge gate.
+  Phase: Research.
+- [ ] Clarify nominal/worst-case endpoint and transfer-error acceptance
+  criteria (Q01; R006, R011, R023).
+  Phase: Research.
+- [ ] Confirm the current course deadline and submission instructions,
+  including the unstated year/cutoff (Q04; R033–R035).
+  Phase: Research.
+- [ ] Obtain the lab LM324N model and reconcile applicable device/output
+  limits and loading with the supplied sources (Q03/Q05; R008, R009, R023).
+  Phase: Research.
+- [ ] Research relevant building blocks and primary references, including
+  the source-recommended Application Note 105; record functionality,
+  limitations, and integration relevance (Q06; R014).
   Phase: Research.
 
 ## Next
 
-- [ ] Confirm the assignment stage and assess existing engineering
-  progress from the available sources and project files.
-  Phase: Research.
+- [ ] Once evidence is sufficient, compare two candidate approaches using
+  diagrams, stated assumptions, and requirement links (R016–R019).
+  Phase: Plan.
+- [ ] Define a verification plan with explicit criteria and conditions
+  (R002–R013, R023–R024); use mie366-grill-me before major plan acceptance.
+  Phase: Plan.
 
 ## Later
 
-- [ ] Once Research supports planning, prepare candidate approaches
-  and verification criteria for challenge and student review.
-  Phase: Plan. Related IDs: assign after source review.
+- [ ] Implement the student-accepted final design and collect simulation
+  evidence for the stated conditions (R020–R024).
+  Phase: Implement.
+- [ ] Review results against requirements without treating a successful
+  simulation run as proof of compliance (R002–R013, R023).
+  Phase: Review.
+- [ ] Prepare the report within the source-stated content/format rules;
+  resolve page-count questions first, then use mie366-writing-reviewer
+  (Q02; R014–R032).
+  Phase: Review.
 
 ## Blocked
 
-- [ ] Extract official requirements into REQUIREMENTS.md.
-  Phase: Research.
-  Blocker: official assignment sources are not present in source-docs/.
-  Resume when readable sources are available and extraction is authorized.
+- Final numerical pass/fail thresholds depend on Q01 and applicable
+  conditions in Q05; no acceptance band has been adopted.
+- Model-dependent simulation validation awaits the lab model (Q03).
+- Submission-date certainty awaits the current course posting (Q04).
