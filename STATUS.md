@@ -17,14 +17,35 @@ Build the student's understanding of DA1 through small, source-backed
 steps, then resolve the highest-impact evidence gaps before planning
 candidate circuits.
 
-Current learning checkpoint: organize the Engineering Specification and
-Background Research section around relevant building blocks, their
-functions, limitations, and integration, with numbered source citations
-(R014, R015, R032; DA1B p. 4). The source labels the section <1 page.
-The outline is guidance; no report draft or completed primary-source
-building-block research is implied.
+Current writing checkpoint: the requested engineering-specification
+subsection is drafted in
+[DA1 engineering specification draft](deliverables/DA1-engineering-specification-draft.md),
+with requirement citations and a derived nominal transfer function.
+The writing review checked source fidelity and equations; its wording
+corrections have been applied. No circuit verification is implied.
+The [Google Docs draft](https://docs.google.com/document/d/1G7m3psEyE-etR88Xyv4Ig0tU98JhpPj-uQR8AM_3weM/edit)
+was created through the browser with explicit student authorization.
+Google Docs confirmed Saved to Drive. The text, formatted equations,
+11-point body font, and reference were visually checked in the browser.
+Background research on building-block functions, limitations, and
+integration remains pending (R014, R015, R032; DA1B p. 4). The combined
+section is labelled <1 page; the specification draft alone does not
+complete that section.
 
-Pending circuit checkpoint: find the non-inverting input-node voltage
+Current three-op-amp learning branch: investigate a buffered reference,
+a non-inverting weighted summer providing offset and part of the gain,
+and a final non-inverting gain stage (R006–R009, R014; DA1B pp. 3, 8).
+Under ideal linear assumptions, if the final gain is K, the middle stage
+must produce V_MID = (A/K) V_SENSE + (0.25 V)/K, where A = 8.714285...
+V/V [DERIVED from V_OUT = K V_MID]. Pending question: with an illustrative
+final gain of 2, find V_MID at zero current. This is a teaching example;
+no gain, reference, resistor network, or topology has been accepted.
+Actual output limits, loading, and model behavior remain unchecked.
+The positive-reference gain/offset building block is also described by
+[TI CIRCUIT060064](https://www.ti.com/tool/CIRCUIT060064); that example
+does not establish LM324N feasibility under the assignment conditions.
+
+Continuing circuit checkpoint: find the non-inverting input-node voltage
 for equal input resistors and ideal sources, then derive the general
 weighted-node and feedback-gain relationships (R006, R014; DA1B p. 8).
 The feedback relationship G = 1 + R_f/R_g was explained using the
@@ -121,4 +142,5 @@ No simulation or physical test evidence is recorded.
 
 ## Last Updated
 
-2026-09-14 — first-section content guidance checked against DA1B p. 4.
+2026-09-14 — added the requested three-op-amp teaching branch and its
+pending intermediate-voltage question. No design accepted or verified.

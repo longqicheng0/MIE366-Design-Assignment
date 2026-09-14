@@ -6,10 +6,25 @@ research/DA1_SOURCE_REVIEW.md. No engineering decisions are accepted yet.
 
 ## Now
 
+- [ ] Work backward through a three-op-amp teaching example: buffered
+  reference, weighted gain/offset stage, then final gain K. Find the
+  middle-stage zero-current voltage for illustrative K = 2 before
+  deriving resistor relationships (R006–R009, R014; DA1B pp. 3, 8).
+  Phase: Research. No topology or gain accepted; device limits and
+  loading still require review.
+- [x] Draft the engineering-specification subsection from DA1B, including
+  the nominal transfer equation and component constraints; see
+  deliverables/DA1-engineering-specification-draft.md. No design
+  selection or verification implied. Phase: Research.
+- [x] Create the requested Google Doc from the specification draft and
+  inspect its layout. Student authorized browser creation; text,
+  equations, 11-point body font, reference, and saved status checked.
+  Document link is in STATUS.md; combined-section page count is pending.
 - [ ] Gather cited building-block evidence and prepare a concise first
   section covering functionality, limitations, and a plan for integration
-  (R014, R015, R032; DA1B p. 4). Content guidance clarified; drafting and
-  source collection remain pending. Preserve the <1-page source label
+  (R014, R015, R032; DA1B p. 4). Engineering specification drafted;
+  background research and integration discussion remain pending.
+  Preserve the <1-page source label
   and unresolved page-count questions in Q02. Phase: Research.
 - [x] Learning checkpoint: identify R_SENSE as the measurement source
   and calculate its voltage at 3.5 A (R002, R004). Student's 0.35 V result
