@@ -15,9 +15,11 @@ research/DA1_SOURCE_REVIEW.md. No engineering decisions are accepted yet.
 - [ ] Identify a resistor circuit that produces a fixed reference from
   +19 V, as background for buffered-reference and combined gain/offset
   building blocks (DA1B p. 8; R014). Phase: Research.
-- [ ] Explain the low-current limitation of a hypothetical unity-gain
+- [x] Check the low-current limitation of a hypothetical unity-gain
   buffer directly on V_SENSE using the handout's approximation (DA1B
-  p. 6; Q03/Q05). Phase: Research. Student response pending.
+  p. 6; Q03/Q05). Student correctly recognized that a buffer with an
+  assumed 0.1 V floor cannot reproduce 0.05 V. Phase: Research;
+  conceptual example only, not device/model verification.
 - [ ] Review the initial requirement extraction R001–R035 and resolve
   consequential interpretations through the required challenge gate.
   Phase: Research.
