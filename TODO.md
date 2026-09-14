@@ -6,6 +6,9 @@ research/DA1_SOURCE_REVIEW.md. No engineering decisions are accepted yet.
 
 ## Now
 
+- [ ] Explain the CURRENT SENSE block's purpose in the larger power
+  supply, then check understanding against the handouts (R001, R002,
+  R005). Phase: Research. First student response pending.
 - [ ] Review the initial requirement extraction R001–R035 and resolve
   consequential interpretations through the required challenge gate.
   Phase: Research.

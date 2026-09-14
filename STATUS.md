@@ -13,8 +13,14 @@ candidate plan; significant interpretations require student acceptance.
 
 ## Current Objective
 
-Review the draft DA1 requirements and resolve the highest-impact evidence
-gaps before planning candidate circuits.
+Build the student's understanding of DA1 through small, source-backed
+steps, then resolve the highest-impact evidence gaps before planning
+candidate circuits.
+
+Current learning checkpoint: explain the CURRENT SENSE block's purpose
+in the larger power supply (R001, R002, R005). Awaiting the student's
+first explanation; understanding has not yet been assessed. Use one
+question at a time, with hints before answers.
 
 ## Current Assignment Stage
 
@@ -47,6 +53,8 @@ have not been confirmed.
 
 ## Next Actions
 
+- Start with the current learning checkpoint and assess the student's
+  explanation before advancing to the next concept.
 - Review REQUIREMENTS.md and the open questions in the source review.
 - Resolve acceptance/model evidence and gather primary building-block
   research; see TODO.md.
@@ -71,4 +79,4 @@ No simulation or physical test evidence is recorded.
 
 ## Last Updated
 
-2026-09-14 — initial source intake and draft DA1 requirement baseline.
+2026-09-14 — guided DA1 learning started; first checkpoint pending.
