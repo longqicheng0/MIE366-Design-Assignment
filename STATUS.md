@@ -21,6 +21,10 @@ Current learning checkpoint: find the non-inverting input-node voltage
 when V_SENSE and V_REF connect through equal resistors, assuming ideal
 voltage sources and zero op-amp input current. Then derive the general
 weighted-node and feedback-gain relationships (R006, R014; DA1B p. 8).
+The feedback relationship G = 1 + R_f/R_g was explained using the
+output-to-inverting-input divider under ideal linear negative feedback.
+Next, apply current conservation at the positive-input junction; the
+student has not yet derived its voltage or the combined signal weights.
 The voltage-follower teaching schematic is in
 research/visuals/reference-buffer.html. The weighted-sum condition
 b V_REF = 0.25 V was explained on request; student application remains
