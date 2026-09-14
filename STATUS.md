@@ -17,11 +17,12 @@ Build the student's understanding of DA1 through small, source-backed
 steps, then resolve the highest-impact evidence gaps before planning
 candidate circuits.
 
-Current learning checkpoint: explain the potential low-current error of
-a unity-gain buffer connected directly to V_SENSE, using the handout's
-output-floor approximation (DA1B p. 6; Q03/Q05). This is a building-block
-exercise, not an accepted buffer placement. Use one question at a time,
-with hints before answers.
+Current learning checkpoint: identify how resistors could produce a
+fixed reference from +19 V (DA1B p. 8). The building-block discussion now
+considers using one op-amp to buffer that reference and another to combine
+gain and offset. This is a possibility to investigate, not an accepted or
+verified topology; component values, loading, and device limits remain
+unchecked. Use one question at a time, with hints before answers.
 
 Learning progress: the student identified R_SENSE as the measurement
 source and correctly calculated (3.5 A)(0.1 Ω) = 0.35 V [DERIVED]. The
@@ -93,4 +94,4 @@ No simulation or physical test evidence is recorded.
 
 ## Last Updated
 
-2026-09-14 — gain calculation checked; buffer-limit checkpoint pending.
+2026-09-14 — two-op-amp function sharing discussed; reference checkpoint pending.
